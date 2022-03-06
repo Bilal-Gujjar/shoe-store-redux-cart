@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+
+.btn{background-color: transparent;
+  color: rgb(0, 0, 0);
+  position: relative;
+  border: 2px solid rgb(35, 35, 64);
+  min-width: 130px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.35s ease 0s;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: rgb(35, 35, 64);
+  color: rgb(255, 255, 255);
+}
+/* .btn:active{
+  background-color: rgb(35, 35, 64);
+  color: rgb(255, 255, 255);
+} */
+.btn:focus{
+  background-color: rgb(35, 35, 64);
+  color: rgb(255, 255, 255);
+}
+
+  
+
+.nav {
+  display: flex;
+  border-style: solid;
+  border-color: brown;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  margin-top: 5vh;
+  background: transparent;
+}
+.nav__brand {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-color: brown;
+}
+
+.nav__menu {
+  
+  border-style: solid;
+  border-color: rgb(42, 71, 165);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  
+}
+.nav__toggler {
+  
+  display: none;
+}
+.nav__toggler div {
+  
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(0, 0, 0);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  
+  }
+  .nav__menu {
+    
+    position: fixed;
+    top: 7vh; /* 7vh => 30*/
+    right: 0;
+    height: 30vh; /*93vh => 30*/
+    width: 50vw;
+    background:transparent;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    
+    
+  }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+  
+  
+}
+
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+.bc{
+  background-image: url('./banner.png');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
+}

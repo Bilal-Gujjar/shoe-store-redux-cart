@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Ecommerce Shoe Store redux deploy to surge
+name: Redux store
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -30,8 +30,8 @@ jobs:
       with:
          cmd: install # will run `yarn install` command
     - name: React App deployment
-      run: npm run build
+      run: yarn build
     - name: Install Surge
       run: npm install -g surge
     - name: Deploy to Surge 
-      run: surge ./build E-redux-shoestore.surge.sh --token ${{secrets.SURGE_TOKEN_REACT}}  
+      run: surge ./build e-store-with-redux.surge.sh --token ${{secrets.SURGE_TOKEN_REACT}}

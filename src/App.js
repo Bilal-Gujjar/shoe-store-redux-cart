@@ -6,11 +6,11 @@ import Contact from './comp/pages/contact'
 import Notfound from './comp/pages/notfound'
 
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter as 
+  
   Routes,
   Route,
-  Link,
+  
   BrowserRouter
 } from "react-router-dom";
 import Cart from './comp/pages/cart';

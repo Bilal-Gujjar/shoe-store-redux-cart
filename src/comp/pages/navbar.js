@@ -1,10 +1,8 @@
 import {Link } from "react-router-dom";
-// import Home from './home'
+
 import {useSelector} from 'react-redux'
 import logo from '../asset/lofo.png'
-// import Product from './product'
-// import Contact from './contact'
-// import Notfound from './notfound'
+
 import React, { useState } from "react";
 import '../asset/lofo.css'
 
